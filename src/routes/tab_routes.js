@@ -16,7 +16,9 @@ import { Feather } from '@expo/vector-icons';
 //4 Passo - criar a função para construir as abas
 export default function TabRoutes(){
     return(
-        <Tab.Navigator screenOptions={{
+        <Tab.Navigator
+       
+        screenOptions={{
             headerShown: false, 
             tabBarLabelStyle:{
                 fontSize:15,
@@ -26,9 +28,15 @@ export default function TabRoutes(){
             },
             tabBarStyle: {
                 backgroundColor: '#34CB79',
-                color: 'white'              
+                color: 'white',                            
             
-            }}}
+            },
+            //Muda a cor do fundo da aba que tiver ativada
+            tabBarActiveBackgroundColor: '#228B22'          
+        
+        }}
+
+            
             
             
         
@@ -45,6 +53,8 @@ export default function TabRoutes(){
                     tabBarLabel: 'Feed'
                 }}
             />
+
+            
         </Tab.Navigator>
     )
 }
