@@ -4,7 +4,8 @@ import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 
 //2 passo - Importar as telas que serão utilizadas nas abas
 import Home from '../pages/Home';
-import Dashboard from '../pages/Dashboard';
+
+import Feed from '../pages/Feed';
 
 //3 passo - criar um Tab
 const Tab = createBottomTabNavigator();
@@ -38,10 +39,10 @@ export default function TabRoutes(){
                     tabBarLabel: 'Home'
                 }}
             />
-            <Tab.Screen name="mapas" component={Dashboard}
+            <Tab.Screen name="feed" component={Feed}
                  options={{
                     tabBarIcon: () => <Feather name="navigation" size={20} color="white" />,
-                    tabBarLabel: 'Mapas'
+                    tabBarLabel: 'Feed'
                 }}
             />
         </Tab.Navigator>
