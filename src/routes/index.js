@@ -5,13 +5,16 @@ import {NavigationContainer, createNavigationContainer} from '@react-navigation/
 
 //2 Passo - Importar o gerenciador das rotas das abas
 
-import TabRoutes from './tab_routes';
+//import para utilizar o TabRoutes
+//import TabRoutes from './tab_routes';
 
-//import DrawerRoutes from './drawer_routes';
+//Import para utilizar o DrawerRoutes
+import DrawerRoutes from './drawer_routes';
+
 export default function CustomRoutes() {
  return (
    <NavigationContainer>
-        <TabRoutes/>
+        <DrawerRoutes/>
     </NavigationContainer>
   );
 }

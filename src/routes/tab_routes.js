@@ -35,10 +35,6 @@ export default function TabRoutes(){
             tabBarActiveBackgroundColor: '#228B22'          
         
         }}
-
-            
-            
-            
         
         >
             <Tab.Screen name="home" component={Home}
